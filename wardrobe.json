@@ -7,6 +7,10 @@
   {
    "id": "c1791275030086",
    "name": "Сора"
+  },
+  {
+   "id": "c1791275160014",
+   "name": "Лолита"
   }
  ],
  "items": [
@@ -16,6 +20,20 @@
    "desc": "Main color: Ivory / off-white. Dress: Off-the-shoulder corseted gown with heavy draping and gathered construction through the hips and skirt. Silhouette: Hourglass shape with a defined waist and fitted bodice. Length: Full-length gown reaching the floor. Sleeves: Detached semi-sheer fitted sleeves extending to the wrists. Footwear: Pointed ivory heeled boots integrated into the look. Accessories: Delicate layered silver chains and earrings. Hairstyle: Long loose hair with soft texture and curtain bangs.",
    "img": "images/i1791273989666.jpg",
    "fav": true
+  },
+  {
+   "id": "i1791275249178",
+   "cat": "c1791275160014",
+   "desc": "The outfit consists of a dark chocolate-brown cropped lace-up blouse made from a lightweight semi-sheer fabric with a soft, slightly textured surface. The blouse has a deep V-neckline edged with black-brown floral lace, long voluminous sleeves, and a fitted waist that ends above the hips. The front is decorated with several narrow leather-look straps and metal eyelets, while the sleeves become gathered and slightly loose toward the wrists. Over the blouse, the character wears a pair of dark brown low-rise cargo trousers made from heavy cotton or cotton twill, with a relaxed, wide-leg silhouette extending to the ankles. The trousers feature multiple utility pockets, belt loops, a dark brown leather belt with a rectangular metal buckle, long hanging straps, and additional stitched panels around the thighs and knees. A pair of dark brown platform shoes or low boots completes the outfit, while the accessories include a small structured brown handbag with metal hardware and pale dusty-pink fluffy pom-poms attached",
+   "img": "images/i1791275249178.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1791275265913",
+   "cat": "c1791275160014",
+   "desc": "The outfit is centered around a fitted dark chocolate-brown satin corset with a structured boned construction, narrow shoulder straps, and a deep sweetheart neckline decorated with black-brown floral lace. The satin has a smooth, glossy surface that reflects light differently across the fitted bodice, while the corset extends to the natural waist with a slightly pointed lower edge. Over it, the character wears a long sheer brown lace or chiffon robe with wide sleeves, a loose open front, and ornate floral lace panels around the cuffs and edges. The robe reaches approximately to the ankles and has a long flowing hem that extends slightly behind the feet. The main skirt is a dark chocolate-brown satin maxi skirt with a fitted upper section and a high thigh slit on one side, extending from the hip almost to the floor. The footwear consists of delicate dark brown platform sandals with thin ankle straps and high heels, and the accessories include a small dark brown chain handbag, layered silver-toned necklaces",
+   "img": "images/i1791275265913.jpg",
+   "fav": false
   }
  ]
 }
