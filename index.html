@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
 <title>Мой гардероб</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -12,7 +13,7 @@
 :root[data-theme="dark"]{--bg:#1c1619;--card:#272024;--tx:#f3e8ed;--mut:#b3a0a8;--ac:#ef7aa8;--ac2:#3a2530;--bd:#3d2d35;--on:#1c1619}
 *{box-sizing:border-box;scrollbar-width:none;-webkit-tap-highlight-color:transparent}
 *::-webkit-scrollbar{display:none}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}[hidden]{display:none!important}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}[hidden]{display:none!important}.ro .ed{display:none!important}
 body{margin:0;background:var(--bg);color:var(--tx);font-family:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif}
 h1,h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;margin:0}
 .wrap{max-width:960px;margin:0 auto;padding:0 16px 110px}
@@ -83,7 +84,7 @@ dialog .row{flex-wrap:wrap}.ml button{width:100%;margin-top:8px}
  <header>
   <h1 id="title">Мой шкаф</h1>
   <button class="ghost ic" onclick="pull()" aria-label="Обновить с GitHub"><svg class="i"><use href="#i-down"/></svg></button>
-  <button class="ic" id="bPush" onclick="push()" aria-label="Сохранить на GitHub"><svg class="i"><use href="#i-up"/></svg></button>
+  <button class="ic ed" id="bPush" onclick="push()" aria-label="Сохранить на GitHub"><svg class="i"><use href="#i-up"/></svg></button>
   <button class="ghost ic" onclick="openGh()" aria-label="Настройки GitHub"><svg class="i"><use href="#i-gear"/></svg></button>
  </header>
  <div id="main"></div>
@@ -96,13 +97,13 @@ dialog .row{flex-wrap:wrap}.ml button{width:100%;margin-top:8px}
 <div id="det" hidden>
  <div class="dp"><img id="vImg" alt="">
   <button class="ic ov l" onclick="closeDet()" aria-label="Назад"><svg class="i"><use href="#i-back"/></svg></button>
-  <button class="ic ov r" id="bFav" onclick="toggleFav()" aria-label="В любимое"><svg class="i"><use href="#i-heart"/></svg></button>
+  <button class="ic ov r ed" id="bFav" onclick="toggleFav()" aria-label="В любимое"><svg class="i"><use href="#i-heart"/></svg></button>
  </div>
  <div class="db">
   <span class="chip" id="vCat"></span>
   <textarea id="vDesc" placeholder="Описание: что это, с чем носить…" rows="3"></textarea>
   <div class="row"><button onclick="copyImg()"><svg class="i"><use href="#i-copy"/></svg> Копировать</button><button class="ghost" onclick="saveImg()"><svg class="i"><use href="#i-dl"/></svg> Скачать</button></div>
-  <div class="row"><button class="ghost" onclick="openMove()"><svg class="i"><use href="#i-move"/></svg> Перенести в…</button><button class="ghost ic" style="flex:none" onclick="delItem()" aria-label="Удалить"><svg class="i"><use href="#i-trash"/></svg></button></div>
+  <div class="row ed"><button class="ghost" onclick="openMove()"><svg class="i"><use href="#i-move"/></svg> Перенести в…</button><button class="ghost ic" style="flex:none" onclick="delItem()" aria-label="Удалить"><svg class="i"><use href="#i-trash"/></svg></button></div>
   <p class="note">На телефоне можно зажать картинку и выбрать «Сохранить» или «Копировать».</p>
  </div>
 </div>
@@ -118,7 +119,7 @@ dialog .row{flex-wrap:wrap}.ml button{width:100%;margin-top:8px}
   <input id="gUser" placeholder="Твой логин GitHub">
   <input id="gRepo" placeholder="Название репозитория">
   <input id="gTok" type="password" placeholder="Токен (нужен только для сохранения)">
-  <p class="note">Токен хранится только в этом браузере. Чтобы просто смотреть гардероб на другом устройстве, токен не нужен.</p>
+  <p class="note">Токен хранится только в этом браузере. Без токена сайт работает в режиме просмотра: кнопки добавления и редактирования скрыты.</p>
   <div class="row"><button onclick="saveGh()">Сохранить</button><button class="ghost" onclick="dGh.close()">Закрыть</button></div>
 </dialog>
 <div id="st"></div>
@@ -137,9 +138,12 @@ function clean(){const n=S.items.length+S.cats.length;S.items=S.items.filter(i=>
 function retry(el){const n=+el.dataset.n||0;if(n>6)return;el.dataset.n=n+1;setTimeout(()=>{el.src=el.src.split('?')[0]+'?r='+Date.now()},10000)}
 const catName=id=>(S.cats.find(c=>c.id===id)||{}).name||'';
 const tile=i=>`<div class="t" onclick="openItem('${i.id}')"><div class="p"><img src="${i.img}" alt="" loading="lazy" onerror="retry(this)">${i.fav?`<div class="hb">${ICON('heart')}</div>`:''}</div><span>${esc(i.desc||'Без описания')}</span></div>`;
-const addTile=c=>`<button class="addt" onclick="openAdd('${c}')" aria-label="Добавить вещь">${ICON('plus')}</button>`;
+const addTile=c=>`<button class="addt ed" onclick="openAdd('${c}')" aria-label="Добавить вещь">${ICON('plus')}</button>`;
+const can=()=>!!(G.u&&G.r&&G.t);
+function mode(){document.body.classList.toggle('ro',!can())}
 function go(v,c){V=v;if(c)catId=c;render();scrollTo(0,0)}
 function render(){
+  mode();
   if(V==='cat'&&!S.cats.find(c=>c.id===catId))V='shelf';
   $('nShelf').classList.toggle('on',V!=='fav');$('nFav').classList.toggle('on',V==='fav');
   const m=$('main');
@@ -150,11 +154,11 @@ function render(){
   }else if(V==='cat'){
     $('title').textContent=catName(catId);
     const its=S.items.filter(i=>i.cat===catId);
-    m.innerHTML=`<div class="cb"><button class="ghost" onclick="go('shelf')">${ICON('back')} Назад</button><button class="ghost" onclick="renCat()">${ICON('edit')} Переименовать</button><button class="ghost ic" onclick="delCat()" aria-label="Удалить категорию">${ICON('trash')}</button></div><div class="gr">${addTile(catId)}${its.map(tile).join('')}</div>`;
+    m.innerHTML=`<div class="cb"><button class="ghost" onclick="go('shelf')">${ICON('back')} Назад</button><button class="ghost ed" onclick="renCat()">${ICON('edit')} Переименовать</button><button class="ghost ic ed" onclick="delCat()" aria-label="Удалить категорию">${ICON('trash')}</button></div><div class="gr">${addTile(catId)}${its.map(tile).join('')}</div>`;
   }else{
     $('title').textContent='Мой шкаф';
-    m.innerHTML=S.cats.length?S.cats.map(c=>{const its=S.items.filter(i=>i.cat===c.id);return `<section class="sh"><div class="hd"><h2>${esc(c.name)}</h2><button class="lk" onclick="go('cat','${c.id}')">Все (${its.length})</button></div><div class="rw">${addTile(c.id)}${its.map(tile).join('')}</div></section>`}).join('')+`<button class="newshelf" onclick="addCat()">${ICON('plus')} Новая полка</button>`
-     :`<div class="empty" style="margin-top:40px">Пока нет ни одной полки.<button onclick="addCat()">${ICON('plus')} Создать полку</button></div>`;
+    m.innerHTML=S.cats.length?S.cats.map(c=>{const its=S.items.filter(i=>i.cat===c.id);return `<section class="sh"><div class="hd"><h2>${esc(c.name)}</h2><button class="lk" onclick="go('cat','${c.id}')">Все (${its.length})</button></div><div class="rw">${addTile(c.id)}${its.map(tile).join('')}</div></section>`}).join('')+`<button class="newshelf ed" onclick="addCat()">${ICON('plus')} Новая полка</button>`
+     :`<div class="empty" style="margin-top:40px">Пока нет ни одной полки.<button class="ed" onclick="addCat()">${ICON('plus')} Создать полку</button></div>`;
   }
 }
 function addCat(){const n=prompt('Название категории:');if(!n||!n.trim())return null;const id='c'+Date.now();S.cats.push({id,name:n.trim()});commit();render();return id}
@@ -169,7 +173,7 @@ function addItem(){
 }
 const item=()=>S.items.find(x=>x.id===openId);
 function fit(){const t=$('vDesc');t.style.height='auto';t.style.height=Math.max(90,t.scrollHeight)+'px'}
-function paint(){const i=item();$('vImg').src=i.img;$('vDesc').value=i.desc||'';$('vCat').textContent=catName(i.cat);$('bFav').classList.toggle('on',!!i.fav);fit()}
+function paint(){const i=item();$('vDesc').readOnly=!can();$('vImg').src=i.img;$('vDesc').value=i.desc||'';$('vCat').textContent=catName(i.cat);$('bFav').classList.toggle('on',!!i.fav);fit()}
 function openItem(id){openId=id;$('det').hidden=false;document.body.style.overflow='hidden';paint();$('det').scrollTop=0}
 function closeDet(){$('det').hidden=true;document.body.style.overflow='';render()}
 $('vDesc').addEventListener('input',fit);
@@ -184,7 +188,7 @@ async function copyImg(){try{const b=await toPng($('vImg').src);await navigator.
 async function saveImg(){try{const b=await toPng($('vImg').src);const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='outfit-'+openId+'.png';a.click()}catch(e){toast('Не вышло, зажми картинку и выбери «Сохранить»')}}
 
 function openGh(){$('gUser').value=G.u||'';$('gRepo').value=G.r||'';$('gTok').value=G.t||'';dGh.showModal()}
-function saveGh(){G={u:$('gUser').value.trim(),r:$('gRepo').value.trim(),t:$('gTok').value.trim()};try{localStorage.setItem('wdg',JSON.stringify(G))}catch(e){}dGh.close();toast('Настройки сохранены')}
+function saveGh(){G={u:$('gUser').value.trim(),r:$('gRepo').value.trim(),t:$('gTok').value.trim()};try{localStorage.setItem('wdg',JSON.stringify(G))}catch(e){}dGh.close();render();toast(can()?'Режим редактирования включён':'Режим просмотра')}
 const api=p=>`https://api.github.com/repos/${G.u}/${G.r}/contents/${p}`;
 const hd=()=>({Authorization:'Bearer '+G.t,Accept:'application/vnd.github+json'});
 const b64=s=>btoa(unescape(encodeURIComponent(s)));
