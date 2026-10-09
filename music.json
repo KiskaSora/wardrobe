@@ -1,7 +1,6 @@
 {
  "tracks": [
-  { "title": "Название трека", "file": "music/track1.mp3" },
-  { "title": "Другой трек", "file": "music/track2.mp3" },
-  "music/просто-имя-файла.mp3"
+  { "title": "Madonna — Vogue", "file": "music/madonna-vogue.mp3" },
+  { "title": "Britney Manson — FASHION", "file": "music/britney-manson-fashion.mp3" }
  ]
 }
