@@ -61,8 +61,13 @@ dialog::backdrop{background:rgba(0,0,0,.55)}
 dialog .row{flex-wrap:wrap}.ml button{width:100%;margin-top:8px}
 #bar{margin-top:6px}
 .sr{display:flex;gap:8px;align-items:center;position:relative}
-.sr input{margin:0;padding:11px 12px 11px 38px;flex:1;width:auto;min-width:0}
-.sr .si{position:absolute;left:12px;color:var(--mut);pointer-events:none}
+.sw{position:relative;flex:1;min-width:0}
+.sw input{margin:0;padding:11px 42px 11px 38px;width:100%}
+.sw .si{position:absolute;left:12px;top:50%;margin-top:-.575em;color:var(--mut);pointer-events:none}
+.clr{position:absolute;right:5px;top:50%;transform:translateY(-50%);width:34px;height:34px;padding:0;background:none;color:var(--mut);border-radius:50%;font-size:17px}
+.clr:hover{color:var(--ac)}
+.fa{width:1em;height:1em;flex:none;fill:currentColor;stroke:none}
+.mask{-webkit-text-security:disc;text-security:disc}
 .chips{display:flex;gap:8px;overflow-x:auto;padding:2px 0 4px;margin-top:8px}
 .cc{flex:none;background:var(--card);color:var(--tx);border:1px solid var(--bd);padding:7px 12px;border-radius:20px;font-size:14px}
 .cc.on{background:var(--ac);color:var(--on);border-color:var(--ac)}
@@ -94,7 +99,9 @@ dialog .row{flex-wrap:wrap}.ml button{width:100%;margin-top:8px}
 <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4-4"/></symbol>
 <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/></symbol>
 <symbol id="i-next" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
-<symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+<!-- Font Awesome Free 6 (CC BY 4.0, fontawesome.com/license/free) -->
+<symbol id="fa-xmark" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></symbol>
+<symbol id="fa-circle-xmark" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></symbol>
 <symbol id="i-move" viewBox="0 0 24 24"><path d="M4 7h13M13 3l4 4-4 4M20 17H7M11 13l-4 4 4 4"/></symbol>
 </defs></svg>
 
@@ -106,7 +113,7 @@ dialog .row{flex-wrap:wrap}.ml button{width:100%;margin-top:8px}
   <button class="ghost ic" onclick="openGh()" aria-label="Настройки GitHub"><svg class="i"><use href="#i-gear"/></svg></button>
  </header>
  <div id="bar">
-  <div class="sr"><svg class="i si"><use href="#i-search"/></svg><input id="q" type="search" placeholder="Поиск по описанию…" oninput="setQ(this.value)" autocomplete="off"><button class="ghost ic" onclick="openSz()" aria-label="Размер карточек"><svg class="i"><use href="#i-grid"/></svg></button></div>
+  <div class="sr"><div class="sw"><svg class="i si"><use href="#i-search"/></svg><input id="q" type="text" name="wd-filter" inputmode="search" enterkeyhint="search" placeholder="Поиск по описанию…" oninput="setQ(this.value)" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true" data-1p-ignore data-bwignore data-form-type="other"><button class="clr" id="qc" onclick="clrQ()" aria-label="Очистить поиск" hidden><svg class="fa"><use href="#fa-circle-xmark"/></svg></button></div><button class="ghost ic" onclick="openSz()" aria-label="Размер карточек"><svg class="i"><use href="#i-grid"/></svg></button></div>
   <div class="chips" id="chips" hidden></div>
  </div>
  <div id="main"></div>
@@ -142,9 +149,9 @@ dialog .row{flex-wrap:wrap}.ml button{width:100%;margin-top:8px}
   <div class="row"><button onclick="addItem()">Добавить</button><button class="ghost" onclick="dAdd.close()">Отмена</button></div>
 </dialog>
 <dialog id="dGh"><b>Настройки GitHub</b>
-  <input id="gUser" placeholder="Твой логин GitHub">
-  <input id="gRepo" placeholder="Название репозитория">
-  <input id="gTok" type="password" placeholder="Токен (нужен только для сохранения)">
+  <input id="gUser" placeholder="Твой логин GitHub" autocomplete="off" data-lpignore="true" data-form-type="other">
+  <input id="gRepo" placeholder="Название репозитория" autocomplete="off" data-lpignore="true" data-form-type="other">
+  <input id="gTok" class="mask" type="text" name="wd-gh-key" placeholder="Токен (нужен только для сохранения)" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" data-lpignore="true" data-1p-ignore data-bwignore data-form-type="other">
   <p class="note">Токен хранится только в этом браузере. Без токена сайт работает в режиме просмотра: кнопки добавления и редактирования скрыты.</p>
   <div class="row"><button onclick="saveGh()">Сохранить</button><button class="ghost" onclick="dGh.close()">Закрыть</button></div>
 </dialog>
@@ -190,13 +197,14 @@ function match(i){
   if(F.c.size){const cs=colorsOf(i);for(const k of F.c)if(!cs.includes(k))return false}
   return true;
 }
-function setQ(v){F.q=v.trim().toLowerCase();render()}
+function setQ(v){F.q=v.trim().toLowerCase();$('qc').hidden=!v;render()}
+function clrQ(){F.q='';$('q').value='';$('qc').hidden=true;render()}
 function toggleCol(k){F.c.has(k)?F.c.delete(k):F.c.add(k);render()}
-function resetF(){F={q:'',c:new Set()};$('q').value='';render()}
+function resetF(){F={q:'',c:new Set()};$('q').value='';$('qc').hidden=true;render()}
 function chips(){
   const has=new Set();S.items.forEach(i=>colorsOf(i).forEach(k=>has.add(k)));
   let h=COL.filter(c=>has.has(c[0])).map(c=>`<button class="cc${F.c.has(c[0])?' on':''}" onclick="toggleCol('${c[0]}')"><b style="background:${c[2]}"></b>${c[1]}</button>`).join('');
-  if(h&&filterOn())h+=`<button class="cc" onclick="resetF()">${ICON('x')} Сбросить</button>`;
+  if(h&&filterOn())h+=`<button class="cc" onclick="resetF()"><svg class="fa"><use href="#fa-xmark"/></svg> Сбросить</button>`;
   $('chips').innerHTML=h;$('chips').hidden=!h;
 }
 const SIZES=[['s','Компактные','как раньше'],['m','Средние','под пропорции фото'],['l','Крупные','']];
