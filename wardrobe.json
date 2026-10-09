@@ -9,8 +9,8 @@
    "name": "Сора"
   },
   {
-   "id": "c1791275160014",
-   "name": "Лолита"
+   "id": "c1791526987608",
+   "name": "Лилит"
   }
  ],
  "items": [
@@ -23,14 +23,14 @@
   },
   {
    "id": "i1791275249178",
-   "cat": "c1791275160014",
+   "cat": "c1791526987608",
    "desc": "The outfit consists of a dark chocolate-brown cropped lace-up blouse made from a lightweight semi-sheer fabric with a soft, slightly textured surface. The blouse has a deep V-neckline edged with black-brown floral lace, long voluminous sleeves, and a fitted waist that ends above the hips. The front is decorated with several narrow leather-look straps and metal eyelets, while the sleeves become gathered and slightly loose toward the wrists. Over the blouse, the character wears a pair of dark brown low-rise cargo trousers made from heavy cotton or cotton twill, with a relaxed, wide-leg silhouette extending to the ankles. The trousers feature multiple utility pockets, belt loops, a dark brown leather belt with a rectangular metal buckle, long hanging straps, and additional stitched panels around the thighs and knees. A pair of dark brown platform shoes or low boots completes the outfit, while the accessories include a small structured brown handbag with metal hardware and pale dusty-pink fluffy pom-poms attached",
    "img": "images/i1791275249178.jpg",
    "fav": false
   },
   {
    "id": "i1791275265913",
-   "cat": "c1791275160014",
+   "cat": "c1791526987608",
    "desc": "The outfit is centered around a fitted dark chocolate-brown satin corset with a structured boned construction, narrow shoulder straps, and a deep sweetheart neckline decorated with black-brown floral lace. The satin has a smooth, glossy surface that reflects light differently across the fitted bodice, while the corset extends to the natural waist with a slightly pointed lower edge. Over it, the character wears a long sheer brown lace or chiffon robe with wide sleeves, a loose open front, and ornate floral lace panels around the cuffs and edges. The robe reaches approximately to the ankles and has a long flowing hem that extends slightly behind the feet. The main skirt is a dark chocolate-brown satin maxi skirt with a fitted upper section and a high thigh slit on one side, extending from the hip almost to the floor. The footwear consists of delicate dark brown platform sandals with thin ankle straps and high heels, and the accessories include a small dark brown chain handbag, layered silver-toned necklaces",
    "img": "images/i1791275265913.jpg",
    "fav": false
@@ -51,9 +51,44 @@
   },
   {
    "id": "i1791276167888",
-   "cat": "c1791275160014",
+   "cat": "c1791526987608",
    "desc": "Main color: Black.\nDress: Gothic floor-length gown with a fitted bodice, high neckline, tightly ruched waist and hips, and layered flowing skirt with intricate lace panels.\nSilhouette: Hourglass shape with a strongly defined waist and fitted upper body, gradually widening into a dramatic trailing skirt.\nLength: Full-length gown reaching and pooling on the floor.\nSleeves: Long fitted semi-sheer sleeves extending to the wrists, with delicate lace detailing along the edges.\nFootwear: Black pointed heeled shoes mostly concealed beneath the long skirt.\nAccessories: Ornate black gothic tiara and a long sheer black lace-edged bridal veil falling to the floor.\nHairstyle: Very long loose wavy copper-red hair with soft curtain bangs framing the face.",
    "img": "images/i1791276167888.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1791526851300",
+   "cat": "c1791273877107",
+   "desc": "Main color: Dusty rose / muted pink. Dress: Off-the-shoulder corseted gown with a structured sweetheart bodice, ruched fabric panels, layered translucent draping, and intricate silver chain embellishments around the waist and skirt. Silhouette: Hourglass shape with a fitted bodice and defined waist. Length: Asymmetrical floor-length gown with a short inner skirt and long trailing sheer panels. Sleeves: Detached, voluminous sheer sleeves with ruffled edges and hanging fabric strips. Footwear: Pointed dusty rose high heels with delicate crisscross ankle straps. Accessories: Ornate layered silver choker, dangling chains, decorative waist chains, and long earrings. Hairstyle: Red hair styled in a messy high bun with loose face-framing strands and wispy bangs.",
+   "img": "images/i1791526851300.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1791526913282",
+   "cat": "c1791273877107",
+   "desc": "Main color: Black with ivory accents. Top: Ivory satin corset with a structured sweetheart neckline, vertical boning, lace trim, and intricate front lacing. Outerwear: Long black tailored coat with exaggerated shoulders, layered lapels, fitted sleeves, lace inserts, and distressed asymmetrical tails. Bottoms: Black fitted shorts with layered fabric panels, decorative chains, and dangling silver hardware. Silhouette: Defined waist with a structured upper body and dramatic elongated outerwear. Length: Coat extending to the ankles, with irregular trailing panels. Sleeves: Long fitted black sleeves with lace detailing and distressed edges. Footwear: Black pointed high heels with crisscross lace-up straps around the ankles and lower legs. Accessories: Layered silver waist chains, rings, dark gloves, and a black choker with metallic details. Hairstyle: Long straight copper-red hair with blunt bangs, worn loose over the shoulders and down the back.",
+   "img": "images/i1791526913282.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1791526954768",
+   "cat": "c1791273877107",
+   "desc": "Main color: Ivory / off-white with black spotted patterns. Dress: Off-the-shoulder corseted gown with a fitted sweetheart bodice, ruched construction, asymmetrical gathered draping across the hips, and layered translucent fabric. Silhouette: Hourglass shape with a defined waist and fitted bodice. Length: Floor-length gown with a high front slit, an asymmetrical skirt, and a long trailing overskirt. Sleeves: Detached, voluminous sheer sleeves with layered ruffles and irregular black spots. Footwear: Black pointed high heels with ankle straps and metallic buckles. Accessories: Layered silver necklaces, ornate earrings, decorative waist chains, and a slim choker. Hairstyle: Very long, voluminous curly copper-red hair worn loose, with a small braided section along the crown and loose strands framing the face.",
+   "img": "images/i1791526954768.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1791527096183",
+   "cat": "c1791273877107",
+   "desc": "Main color: Hot pink / fuchsia with black accents. Dress: Fitted Chinese qipao-inspired dress with a high mandarin collar, short sleeves, a diagonal front closure, and black calligraphic patterns printed across the fabric. Silhouette: Close-fitting hourglass shape with a defined waist and fitted hips. Length: Floor-length dress with a high side slit extending to the upper thigh. Sleeves: Short, fitted cap sleeves. Footwear: Black open-toe high-heeled sandals with thin ankle straps. Accessories: Black lace fingerless gloves, a small structured black handbag with a chain handle, dangling earrings, and a decorative thigh chain with a sun-shaped ornament. Hairstyle: Long, loose copper-red hair with soft waves, curtain bangs, and face-framing strands.",
+   "img": "images/i1791527096183.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1791527138932",
+   "cat": "c1791273877107",
+   "desc": "Main color: Ivory / antique white with black accents. Top: Structured ivory corset with a sweetheart neckline, vertical boning, front lacing, lace inserts, and distressed sheer fabric along the hem. Bottoms: Short fitted ivory shorts with black lace trim, decorative straps, and metallic chain details. Outer layer: Long, sheer ivory overskirt with torn edges, delicate lace detailing, and asymmetrical trailing panels. Silhouette: Hourglass shape with a fitted bodice, defined waist, and short fitted bottoms. Length: Upper-thigh shorts with floor-length translucent overskirt panels. Sleeves: Detached, sheer ivory sleeves extending to the wrists, with loose fabric, ruffled cuffs, and distressed edges. Footwear: Black thigh-high platform boots with pointed toes, high heels, and intricate lace patterns. Accessories: Black belt with silver hardware, layered silver necklaces, a cross pendant, dangling earrings, and decorative chains attached to the waist. Hairstyle: Long, straight copper-red hair with blunt bangs, worn loose down the back.",
+   "img": "images/i1791527138932.jpg",
    "fav": false
   }
  ]
