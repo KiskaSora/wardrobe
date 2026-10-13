@@ -44,7 +44,7 @@
   },
   {
    "id": "c1791881922706",
-   "name": "winter",
+   "name": "sezon holodov",
    "char": "ch1791815482305"
   },
   {
@@ -168,14 +168,14 @@
   },
   {
    "id": "i1791531843838",
-   "cat": "c1791815508301",
+   "cat": "c1791881922706",
    "desc": "Main color: Dark brown / taupe / charcoal / antique gold.\nDress: Tailored Victorian-inspired outfit combining a fitted brown plaid jacket with a deep V-neckline, structured lapels, decorative buttons, and a sharply cinched waist. The jacket extends into asymmetrical pointed panels over a layered dark brown skirt. The skirt features gathered charcoal fabric, cascading ruffles, and sheer black lace panels. Fine metallic chains decorate the waist and hips.\nSilhouette: Hourglass shape with a fitted tailored bodice, sharply defined waist, structured hips, and an asymmetrical layered skirt.\nLength: The front of the skirt reaches above the knees, while the back features longer layered panels extending toward the calves.\nSleeves: Long fitted brown plaid sleeves with structured shoulders, layered cuffs, and delicate lace trim at the wrists.\nFootwear: Dark brown lace-up platform ankle boots with high block heels, tall shafts, and decorative buckles.\nAccessories: Gold-toned buttons, layered chains, antique gold waist chains, delicate lace choker, ornamental brooches, black ribbon hair bow, and decorative metallic clasps.\nHairstyle: Long, voluminous ginger-red hair with loose flowing curls, partially swept back and secured with a black ribbon bow.",
    "img": "images/i1791531843838.jpg",
    "fav": false
   },
   {
    "id": "i1791531864190",
-   "cat": "c1791815508301",
+   "cat": "c1791882466077",
    "desc": "Main color: Pale icy blue / silver / ivory.\nDress: Rococo-inspired gown with a fitted silver-blue corset, delicate embroidery, a structured waist, and multiple layers of gathered pale-blue fabric. The skirt features cascading ruffles, draped satin panels, delicate silver trim, and an asymmetrical front opening. The shorter front section reveals the upper thighs and lace stockings, while the back extends into a long flowing train.\nSilhouette: Hourglass shape with a fitted corseted bodice, defined waist, voluminous sleeves, and a layered high-low skirt.\nLength: Shorter front hem above the knees with a long floor-length train at the back and sides.\nSleeves: Detached oversized pale-blue puff sleeves made from sheer gathered fabric, with multiple ruffled layers and fitted decorative cuffs.\nFootwear: Pale ivory platform high heels with thick soles, ankle straps, delicate ribbons, and lace-up detailing.\nAccessories: White floral hair ornaments, delicate silver necklaces, jeweled waist chains, small crystal earrings, fine silver embroidery, and a miniature ivory handbag with dangling chains.\nHairstyle: Long, voluminous ginger-red hair with soft flowing curls, partially pinned back with white flowers on both sides.",
    "img": "images/i1791531864190.jpg",
    "fav": false
@@ -248,6 +248,27 @@
    "cat": "c1791882466077",
    "desc": "Main color: Black with silver accents. Dress: Fitted black ribbed dress with a high neckline, long sleeves, a close-fitting bodice, and a high thigh slit with decorative crisscross lacing along the exposed side. Silhouette: Hourglass shape with a defined waist and fitted hips. Length: Long, floor-length dress with a high side slit and a straight, narrow skirt. Sleeves: Long fitted sleeves extending to the wrists. Veil: Long black translucent veil draped over the head and down the back, decorated with silver cross motifs and ornamental edging. Footwear: Black pointed knee-high heeled boots with fitted shafts and metallic buckles. Accessories: Layered silver waist chains, a large hanging cross pendant, a silver cross necklace, dangling earrings, and a structured black handbag with metallic cross ornaments. Hairstyle: Long, loose copper-red hair with soft waves, parted near the center and partially covered by the veil.",
    "img": "images/i1791882520938.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1791882740298",
+   "cat": "c1791815508301",
+   "desc": "Main color: Dark olive green with antique gold accents. Dress: Strapless corset gown with a sweetheart neckline, structured boning, a fitted bodice, and layered draped fabric gathered around the hips. Silhouette: Hourglass shape with a defined waist and fitted upper body. Length: Floor-length gown with a high front slit, layered asymmetrical skirt panels, and a long trailing train. Sleeves: Long, loose semi-sheer draped sleeve panels extending from the shoulders, with gathered cuffs and layered fabric. Outer layer: Long translucent olive-green hooded cape with ornate gold embroidery, decorative edging, and trailing panels. Footwear: Dark olive pointed high heels with metallic embellishments. Accessories: Multiple cascading gold waist chains, decorative gold ornaments at the hips, a layered choker, dangling earrings, and embroidered gold trim. Hairstyle: Very long, voluminous copper-red hair with loose waves and face-framing strands, partially covered by the hooded veil.",
+   "img": "images/i1791882740298.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1791882794859",
+   "cat": "c1791815508301",
+   "desc": "Main color: Deep burgundy / wine red with antique gold and ivory accents. Dress: Fitted corseted gown with a plunging neckline, structured bodice, vertical boning, decorative gold embroidery, and a central ivory inset panel. Silhouette: Hourglass shape with a fitted bodice, defined waist, and voluminous outer layers. Length: Floor-length gown with a long trailing train and layered fabric extending across the floor. Sleeves: Extra-wide, voluminous bishop sleeves with gathered shoulders, layered ruffles, and fitted cuffs beneath the outer fabric. Outer layer: Long burgundy hooded robe with a deep hood, oversized sleeves, elaborate gold embroidery, and layered ruffled edges. Footwear: Burgundy pointed high heels with ornamental metallic details, mostly concealed beneath the gown. Accessories: Multiple draped gold chains across the bodice and waist, a decorative gold collar, ornate dangling pendants, and a suspended spherical gold-toned accessory with chain details. Hairstyle: Long, loose copper-red hair with soft waves, partially covered by the burgundy hood.",
+   "img": "images/i1791882794859.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1791882845408",
+   "cat": "c1791815508301",
+   "desc": "Main color: Ivory / champagne cream with antique gold accents. Dress: Corseted gown with a deep sweetheart neckline, ruched bodice, fitted waist, embroidered panels, and gathered satin draping across the hips. Silhouette: Hourglass shape with a fitted bodice and a voluminous layered skirt. Length: Floor-length gown with a high front slit, asymmetrical draped panels, and an extensive trailing train. Sleeves: Long, voluminous semi-sheer sleeves with gathered shoulders, loose fabric, and ruffled cuffs. Outer layer: Long ivory hooded veil with sheer fabric, embroidered gold detailing, and decorative edging extending over the shoulders and down the back. Footwear: Ivory pointed high heels with delicate ankle straps and gold embellishments. Accessories: Layered gold necklaces, ornamental waist chains, dangling gold charms, a decorative collar, and intricate embroidered details around the bodice and skirt. Hairstyle: Very long, voluminous copper-red hair with loose curls and face-framing strands, partially covered by the ivory hood.",
+   "img": "images/i1791882845408.jpg",
    "fav": false
   }
  ]
