@@ -78,7 +78,7 @@ dialog .row{flex-wrap:wrap}.ml button{width:100%;margin-top:8px}
 @keyframes sl{from{opacity:0;transform:translateX(var(--dx,30px))}to{opacity:1;transform:none}}
 #aPrev,#chPrev{width:100%;max-height:30vh;object-fit:contain;border-radius:12px;margin-top:6px}
 .note{font-size:12px;color:var(--mut);margin:6px 0 0}
-#st{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(92px + env(safe-area-inset-bottom,0px));background:var(--tx);color:var(--bg);padding:10px 16px;border-radius:20px;font-size:14px;opacity:0;transition:.3s;pointer-events:none;max-width:90vw;text-align:center;z-index:50}
+#st{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(140px + env(safe-area-inset-bottom,0px));background:var(--tx);color:var(--bg);padding:10px 16px;border-radius:20px;font-size:14px;opacity:0;transition:.3s;pointer-events:none;max-width:90vw;text-align:center;z-index:50}
 #st.on{opacity:1}
 .i{width:1.15em;height:1.15em;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 /* персонажи */
@@ -91,6 +91,16 @@ dialog .row{flex-wrap:wrap}.ml button{width:100%;margin-top:8px}
 .ch small{color:var(--mut);font-size:13px}
 .addc{aspect-ratio:3/4;width:100%;border:2px dashed var(--ac);background:none;color:var(--ac);border-radius:20px}
 .addc .i{width:30px;height:30px}
+dialog{max-height:86vh;overflow-y:auto}
+.mh{font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;font-size:21px;margin:16px 0 0;color:var(--ac)}
+.mh:first-of-type{margin-top:10px}
+.ck{position:absolute;top:7px;left:7px;width:26px;height:26px;border-radius:50%;background:var(--bg);border:2px solid var(--ac);color:var(--on);display:flex;align-items:center;justify-content:center}
+.ck .i{width:15px;height:15px;stroke-width:3}
+.t.sel .ck{background:var(--ac)}
+.t.sel .p{outline:3px solid var(--ac);outline-offset:-3px}
+.so .addt{display:none}
+#sb{position:fixed;left:12px;right:12px;bottom:calc(70px + env(safe-area-inset-bottom,0px));z-index:7;background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:10px;display:flex;gap:8px;align-items:center;box-shadow:0 6px 20px rgba(0,0,0,.2)}
+#sb span{flex:1;padding-left:6px;font-weight:600}
 </style>
 </head>
 <body>
@@ -114,6 +124,7 @@ dialog .row{flex-wrap:wrap}.ml button{width:100%;margin-top:8px}
 <symbol id="fa-xmark" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></symbol>
 <symbol id="fa-circle-xmark" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></symbol>
 <symbol id="i-move" viewBox="0 0 24 24"><path d="M4 7h13M13 3l4 4-4 4M20 17H7M11 13l-4 4 4 4"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
 </defs></svg>
 
 <div class="wrap">
@@ -175,12 +186,15 @@ dialog .row{flex-wrap:wrap}.ml button{width:100%;margin-top:8px}
   <p class="note">Токен хранится только в этом браузере. Без токена сайт работает в режиме просмотра: кнопки добавления и редактирования скрыты.</p>
   <div class="row"><button onclick="saveGh()">Сохранить</button><button class="ghost" onclick="dGh.close()">Закрыть</button></div>
 </dialog>
+<div id="sb" hidden><span>Выбрано: <b id="sbn">0</b></span><button onclick="openMoveSel()"><svg class="i"><use href="#i-move"/></svg> Перенести</button><button class="ghost" onclick="toggleSel()">Отмена</button></div>
+<dialog id="dCM"><b>Передать полку персонажу</b><div class="ml" id="cmList"></div><div class="row"><button class="ghost" onclick="dCM.close()">Отмена</button></div></dialog>
 <div id="st"></div>
 
 <script>
 const $=id=>document.getElementById(id);
 const ICON=n=>`<svg class="i"><use href="#i-${n}"/></svg>`;
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let selOn=false,sel=new Set(),moveIds=[];
 let F={q:'',c:new Set()},navL=[],SZ='m',S={chars:[],cats:[],items:[]},V='chars',charId=null,chEdit=null,catId=null,addTo=null,openId=null,G={},dirty=false,lastPush=0;
 try{SZ=localStorage.getItem('wds')||'m'}catch(e){}
 if(!['s','m','l'].includes(SZ))SZ='m';document.body.dataset.sz=SZ;
@@ -207,16 +221,18 @@ const catName=id=>(S.cats.find(c=>c.id===id)||{}).name||'';
 const charName=id=>(S.chars.find(c=>c.id===id)||{}).name||'';
 const catsOf=ch=>S.cats.filter(c=>c.char===ch);
 const itemsOf=ch=>{const ids=new Set(catsOf(ch).map(c=>c.id));return S.items.filter(i=>ids.has(i.cat))};
-const tile=i=>`<div class="t" onclick="openItem('${i.id}')"><div class="p"><img src="${i.img}" alt="" loading="lazy" onerror="retry(this)">${i.fav?`<div class="hb">${ICON('heart')}</div>`:''}</div><span>${esc(i.desc||'Без описания')}</span></div>`;
+const tile=i=>{const on=selOn&&sel.has(i.id);return `<div class="t${on?' sel':''}" onclick="${selOn?`pick('${i.id}',this)`:`openItem('${i.id}')`}"><div class="p"><img src="${i.img}" alt="" loading="lazy" onerror="retry(this)">${i.fav&&!selOn?`<div class="hb">${ICON('heart')}</div>`:''}${selOn?`<div class="ck">${on?ICON('check'):''}</div>`:''}</div><span>${esc(i.desc||'Без описания')}</span></div>`};
+const selBtn=()=>`<button class="ghost ed" onclick="toggleSel()">${ICON('check')} ${selOn?'Отменить выбор':'Выбрать'}</button>`;
 const addTile=c=>`<button class="addt ed" onclick="openAdd('${c}')" aria-label="Добавить вещь">${ICON('plus')}</button>`;
 const can=()=>!!(G.u&&G.r&&G.t);
 function mode(){document.body.classList.toggle('ro',!can())}
 function go(v,c){
+  selOn=false;sel.clear();
   if(v==='chars')clearF();
   else if(!charId){toast('Сначала выбери персонажа');v='chars'}
   V=v;if(c)catId=c;render();scrollTo(0,0)
 }
-function enterChar(id){charId=id;clearF();V='shelf';render();scrollTo(0,0)}
+function enterChar(id){charId=id;selOn=false;sel.clear();clearF();V='shelf';render();scrollTo(0,0)}
 const COL=[
  ['black','Чёрный','#222',/black|noir|чёрн|черн/i],
  ['white','Светлый','#f3ecdf',/ivory|white|cream|beige|ecru|\bbone\b|белы|молочн|слонов|беж/i],
@@ -255,6 +271,7 @@ const charTile=c=>{const n=itemsOf(c.id).length;const l=[...(c.name||'?')][0].to
   return `<div class="ch" onclick="enterChar('${c.id}')"><div class="cv">${c.img?`<img src="${c.img}" alt="" loading="lazy" onerror="retry(this)">`:`<b>${esc(l)}</b>`}</div><span>${esc(c.name)}</span><small>${n} ${n===1?'вещь':'вещей'}</small></div>`};
 function render(){
   mode();
+  document.body.classList.toggle('so',selOn);$('sb').hidden=!selOn;$('sbn').textContent=sel.size;
   if(V!=='chars'&&!S.chars.find(c=>c.id===charId)){V='chars';charId=null}
   if(V==='cat'&&!S.cats.find(c=>c.id===catId&&c.char===charId))V='shelf';
   const home=V==='chars';
@@ -270,19 +287,19 @@ function render(){
   }else if(V==='fav'){
     $('title').textContent='Любимое · '+charName(charId);
     const f=itemsOf(charId).filter(i=>i.fav&&match(i));
-    m.innerHTML=`<div class="gr">${f.length?f.map(tile).join(''):(on?none:'<div class="empty">Здесь будут вещи, которые ты отметишь сердечком.</div>')}</div>`;
+    m.innerHTML=`<div class="cb">${selBtn()}</div><div class="gr">${f.length?f.map(tile).join(''):(on?none:'<div class="empty">Здесь будут вещи, которые ты отметишь сердечком.</div>')}</div>`;
   }else if(V==='cat'){
     $('title').textContent=catName(catId);
     const its=itemsOf(charId).filter(i=>i.cat===catId&&match(i));
-    m.innerHTML=`<div class="cb"><button class="ghost" onclick="go('shelf')">${ICON('back')} Назад</button><button class="ghost ed" onclick="renCat()">${ICON('edit')} Переименовать</button><button class="ghost ic ed" onclick="delCat()" aria-label="Удалить категорию">${ICON('trash')}</button></div><div class="gr">${on?'':addTile(catId)}${its.map(tile).join('')}</div>${on&&!its.length?none:''}`;
+    m.innerHTML=`<div class="cb"><button class="ghost" onclick="go('shelf')">${ICON('back')} Назад</button><button class="ghost ed" onclick="renCat()">${ICON('edit')} Переименовать</button>${selBtn()}<button class="ghost ed" onclick="openMoveCat()">${ICON('move')} Другому персонажу</button><button class="ghost ic ed" onclick="delCat()" aria-label="Удалить категорию">${ICON('trash')}</button></div><div class="gr">${on?'':addTile(catId)}${its.map(tile).join('')}</div>${on&&!its.length?none:''}`;
   }else if(on){
     $('title').textContent=charName(charId);
     const r=itemsOf(charId).filter(match);
-    m.innerHTML=`<p class="note" style="margin-top:14px">Найдено: ${r.length}</p><div class="gr">${r.length?r.map(tile).join(''):none}</div>`;
+    m.innerHTML=`<div class="cb"><span class="note" style="margin:0">Найдено: ${r.length}</span>${selBtn()}</div><div class="gr">${r.length?r.map(tile).join(''):none}</div>`;
   }else{
     $('title').textContent=charName(charId);
     const cs=catsOf(charId);
-    const top=`<div class="cb"><button class="ghost" onclick="go('chars')">${ICON('back')} Персонажи</button><button class="ghost ed" onclick="openCh('${charId}')">${ICON('edit')} Изменить</button></div>`;
+    const top=`<div class="cb"><button class="ghost" onclick="go('chars')">${ICON('back')} Персонажи</button><button class="ghost ed" onclick="openCh('${charId}')">${ICON('edit')} Изменить</button>${selBtn()}</div>`;
     m.innerHTML=top+(cs.length?cs.map(c=>{const its=S.items.filter(i=>i.cat===c.id);return `<section class="sh"><div class="hd"><h2>${esc(c.name)}</h2><button class="lk" onclick="go('cat','${c.id}')">Все (${its.length})</button></div><div class="rw">${addTile(c.id)}${its.map(tile).join('')}</div></section>`}).join('')+`<button class="newshelf ed" onclick="addCat()">${ICON('plus')} Новая полка</button>`
      :`<div class="empty" style="margin-top:40px">Пока нет ни одной полки.<button class="ed" onclick="addCat()">${ICON('plus')} Создать полку</button></div>`);
   }
@@ -314,7 +331,7 @@ function delCh(){
   S.items=S.items.filter(i=>!ids.has(i.cat));S.cats=S.cats.filter(x=>x.char!==c.id);S.chars=S.chars.filter(x=>x.id!==c.id);
   commit();dCh.close();charId=null;go('chars');
 }
-function addCat(){const n=prompt('Название категории:');if(!n||!n.trim())return null;const id='c'+Date.now();S.cats.push({id,name:n.trim(),char:charId});commit();render();return id}
+function addCat(ch){const n=prompt('Название полки:');if(!n||!n.trim())return null;const id='c'+Date.now();S.cats.push({id,name:n.trim(),char:ch||charId});commit();render();return id}
 function renCat(){const c=S.cats.find(c=>c.id===catId);const n=prompt('Новое название:',c.name);if(!n||!n.trim())return;c.name=n.trim();commit();render()}
 function delCat(){if(!confirm(`Удалить «${catName(catId)}» вместе со всеми вещами?`))return;S.cats=S.cats.filter(x=>x.id!==catId);S.items=S.items.filter(i=>i.cat!==catId);commit();V='shelf';render()}
 function openAdd(c){addTo=c;$('aFile').value='';$('aDesc').value='';$('aPrev').removeAttribute('src');dAdd.showModal()}
@@ -363,9 +380,42 @@ function closeDet(){$('det').hidden=true;document.body.style.overflow='';render(
 $('vDesc').addEventListener('input',fit);
 $('vDesc').addEventListener('change',()=>{const i=item();if(i){i.desc=$('vDesc').value.trim();commit()}});
 function toggleFav(){const i=item();i.fav=!i.fav;commit();$('bFav').classList.toggle('on',i.fav);toast(i.fav?'Добавлено в любимое':'Убрано из любимого')}
-function openMove(){const i=item();$('mList').innerHTML=catsOf(charId).map(c=>`<button class="${c.id===i.cat?'':'ghost'}" ${c.id===i.cat?'disabled':''} onclick="moveTo('${c.id}')">${esc(c.name)}</button>`).join('')+`<button class="ghost" onclick="moveNew()">${ICON('plus')} Новая категория…</button>`;dMove.showModal()}
-function moveTo(id){const i=item();i.cat=id;commit();dMove.close();paint();toast(`Перенесено в «${catName(id)}»`)}
-function moveNew(){dMove.close();const id=addCat();if(id)moveTo(id)}
+function buildMove(){
+  const cur=moveIds.length===1?(S.items.find(v=>v.id===moveIds[0])||{}).cat:null;
+  const chs=[...S.chars].sort((a,b)=>(b.id===charId)-(a.id===charId));
+  $('mList').innerHTML=chs.map(ch=>`<div class="mh">${esc(ch.name)}</div>`+catsOf(ch.id).map(c=>`<button class="${c.id===cur?'':'ghost'}" ${c.id===cur?'disabled':''} onclick="moveTo('${c.id}')">${esc(c.name)}</button>`).join('')+`<button class="ghost" onclick="moveNew('${ch.id}')">${ICON('plus')} Новая полка…</button>`).join('');
+  dMove.showModal();
+}
+function openMove(){moveIds=[openId];buildMove()}
+function openMoveSel(){if(!sel.size)return toast('Сначала отметь вещи');moveIds=[...sel];buildMove()}
+function moveTo(id){
+  const ids=moveIds.slice();
+  ids.forEach(x=>{const i=S.items.find(v=>v.id===x);if(i)i.cat=id});
+  commit();dMove.close();
+  const tc=S.cats.find(c=>c.id===id),other=!!tc&&tc.char!==charId;
+  if(!$('det').hidden){if(other)closeDet();else paint()}
+  else{selOn=false;sel.clear();render()}
+  toast(`Перенесено${ids.length>1?' ('+ids.length+')':''} → «${catName(id)}»${other?' · '+charName(tc.char):''}`);
+}
+function moveNew(ch){dMove.close();const id=addCat(ch);if(id)moveTo(id);else if(moveIds.length)dMove.showModal()}
+function toggleSel(){selOn=!selOn;sel.clear();render()}
+function pick(id,el){
+  sel.has(id)?sel.delete(id):sel.add(id);
+  const on=sel.has(id);el.classList.toggle('sel',on);
+  const ck=el.querySelector('.ck');if(ck)ck.innerHTML=on?ICON('check'):'';
+  $('sbn').textContent=sel.size;
+}
+function openMoveCat(){
+  const o=S.chars.filter(c=>c.id!==charId);
+  if(!o.length)return toast('Сначала создай второго персонажа');
+  $('cmList').innerHTML=o.map(c=>`<button class="ghost" onclick="moveCat('${c.id}')">${esc(c.name)}</button>`).join('');
+  dCM.showModal();
+}
+function moveCat(ch){
+  const c=S.cats.find(x=>x.id===catId);if(!c)return;
+  c.char=ch;commit();dCM.close();V='shelf';render();scrollTo(0,0);
+  toast(`Полка «${c.name}» теперь у ${charName(ch)}`);
+}
 function delItem(){if(!confirm('Удалить эту вещь?'))return;S.items=S.items.filter(i=>i.id!==openId);commit();closeDet()}
 function toPng(src){return new Promise((ok,no)=>{const im=new Image();im.crossOrigin='anonymous';im.onload=()=>{const c=document.createElement('canvas');c.width=im.width;c.height=im.height;c.getContext('2d').drawImage(im,0,0);c.toBlob(ok,'image/png')};im.onerror=no;im.src=src})}
 async function copyImg(){try{const b=await toPng($('vImg').src);await navigator.clipboard.write([new ClipboardItem({'image/png':b})]);toast('Картинка скопирована')}catch(e){toast('Не вышло, зажми картинку и выбери «Копировать»')}}
