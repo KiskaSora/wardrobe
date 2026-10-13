@@ -46,6 +46,11 @@
    "id": "c1791881922706",
    "name": "winter",
    "char": "ch1791815482305"
+  },
+  {
+   "id": "c1791882466077",
+   "name": "so so casual",
+   "char": "ch1791815482305"
   }
  ],
  "items": [
@@ -195,6 +200,55 @@
    "desc": "Main color: Black / charcoal grey / faded beige.\nDress: Structured black gothic evening dress with a deep angular neckline, sharply pointed off-the-shoulder panels, and a fitted bodice featuring subtle black pinstripes. The waist is tightly cinched with a structured corset construction. The asymmetrical skirt combines black pinstriped fabric with distressed beige printed panels, gathered draping, and a high slit. Long irregular fabric strips hang from the waist and skirt.\nSilhouette: Hourglass shape with angular shoulders, a structured fitted bodice, narrow waist, and an asymmetrical skirt.\nLength: Floor-length black skirt with a high front slit and an extended trailing hem.\nSleeves: Long fitted black pinstriped sleeves with sharply structured shoulders, angular cuffs, and distressed decorative fabric strips.\nFootwear: Black pointed high heels with thin ankle straps.\nAccessories: Layered silver chains, gothic choker, multiple rings, decorative body chains, dangling earrings, distressed printed fabric ornaments, and a dark metallic necklace.\nHairstyle: Ginger-red hair styled in a loose high bun with wispy bangs, a few loose face-framing strands, and a small decorative hair ornament.",
    "img": "images/i1791532367215.jpg",
    "fav": true
+  },
+  {
+   "id": "i1791882065931",
+   "cat": "c1791881889850",
+   "desc": "Main color: Black with antique silver and gold accents. Dress: Off-the-shoulder corseted gown with a sweetheart neckline, structured boning, lace trim, ruffled sleeves, and layered gathered fabric around the hips. Silhouette: Hourglass shape with a fitted bodice and defined waist. Length: Floor-length gown with a high front slit, an asymmetrical layered skirt, and an extensive trailing train. Sleeves: Short detached-looking off-the-shoulder ruffled sleeves with lace edging. Headwear: Wide-brimmed black witch hat decorated with layered lace, fabric flowers, and hanging beaded chains. Footwear: Black pointed high heels with thin ankle straps. Accessories: Black lace choker, layered gold and silver waist chains, dangling metallic ornaments, and delicate bracelets. Hairstyle: Very long, voluminous copper-red hair with loose curls and face-framing strands.",
+   "img": "images/i1791882065931.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1791882122335",
+   "cat": "c1791881889850",
+   "desc": "Main color: Ivory / warm off-white. Dress: Structured sweetheart corset gown with vertical boning, ruched satin panels, gathered fabric across the hips, and layered translucent ruffles. Silhouette: Hourglass shape with a fitted bodice, defined waist, and voluminous draped skirt. Length: Floor-length gown with a high front slit, an asymmetrical layered overskirt, and a long trailing train. Sleeves: Long, voluminous semi-sheer sleeves with gathered shoulders and ruffled cuffs. Footwear: Ivory pointed high heels with delicate crisscross lace-up straps around the ankles. Accessories: Layered fine necklaces, pearl-like hair ornaments, dangling earrings, and an ornate spherical handbag suspended from a decorative chain. Hairstyle: Very long, voluminous copper-red hair with loose curls, a small braided section near the crown, and decorative floral hairpins.",
+   "img": "images/i1791882122335.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1791882174167",
+   "cat": "c1791881889850",
+   "desc": "Main color: Deep burgundy / wine red with black and antique gold accents. Dress: Fitted corset gown with a sweetheart neckline, thin shoulder straps, visible front lacing, sheer mesh inserts, and gathered satin draping around the hips. Silhouette: Hourglass shape with a structured bodice and a defined waist. Length: Floor-length gown with a high front slit, layered asymmetrical fabric panels, and a long trailing train. Sleeves: Detached, voluminous burgundy sleeves with wide cuffs and gathered fabric extending toward the wrists. Headwear: Large burgundy wide-brimmed hat with decorative metallic chains, gemstone-like ornaments, and hanging pendants. Footwear: Black pointed high heels with thin ankle straps, worn with patterned dark lace tights. Accessories: Layered metallic waist chains, hanging gold tassels, a dark choker, and dangling earrings. Hairstyle: Very long, voluminous copper-red hair with loose curls and face-framing strands.",
+   "img": "images/i1791882174167.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1791882480622",
+   "cat": "c1791882466077",
+   "desc": "Main color: Ivory / white with silver accents. Dress: Fitted high-neck mini dress made from finely ribbed fabric, with long sleeves, a close-fitting bodice, and gathered ruching along the sides. Silhouette: Hourglass shape with a fitted waist and close-fitting hips. Length: Mini dress ending at the upper thighs. Sleeves: Long fitted sleeves extending to the wrists. Veil: Long ivory translucent veil draped over the head and shoulders, decorated with embroidered crosses and floral motifs along the edges. Footwear: Ivory pointed high heels with delicate ankle straps. Legwear: White thigh-high stockings with wide lace tops. Accessories: Silver cross pendant, delicate necklace, dangling earrings, decorative silver hair clips, and a small ivory handbag with quilted panels and a cross ornament. Hairstyle: Long, loose copper-red hair with soft waves and a side part.",
+   "img": "images/i1791882480622.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1791882493412",
+   "cat": "c1791882466077",
+   "desc": "Main color: Dark chocolate brown with taupe and silver accents. Top: Oversized dark brown knit sweater with a wide off-the-shoulder neckline, long loose sleeves, and ribbed cuffs. Bottoms: High-waisted brown and beige plaid pleated mini skirt with two layered leather belts featuring rectangular silver buckles. Silhouette: Defined waist with a loose upper garment and a short flared skirt. Length: Mini skirt ending at the upper thighs. Sleeves: Long oversized sleeves extending over the wrists. Outer layer: Long translucent brown veil or cape draped over the head and shoulders, with decorative cross embroidery and fringed edges. Footwear: Dark brown platform Mary Jane heels with multiple ankle straps and chunky soles. Legwear: Sheer dark brown thigh-high stockings with lace tops and decorative garter straps. Accessories: Long silver cross necklace, small cross-shaped hair ornament, and layered leather belts. Hairstyle: Very long, voluminous copper-red hair worn loose in soft waves.",
+   "img": "images/i1791882493412.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1791882508946",
+   "cat": "c1791882466077",
+   "desc": "Main color: Ivory / cream with silver accents. Dress: Fitted corset mini dress with a sweetheart neckline, delicate lace trim, front lacing, vertical boning, and gathered fabric around the waist and hips. Silhouette: Hourglass shape with a fitted bodice and defined waist. Length: Mini dress ending at the upper thighs, with asymmetrical sheer overskirt panels extending toward the calves. Sleeves: Detached long ivory arm warmers with fitted forearms and flared cuffs. Outer layer: Long ivory hooded veil or scarf draped over the head, neck, and shoulders, with lace edging and translucent trailing panels. Footwear: Ivory knee-high fitted boots with pointed toes, slim high heels, and decorative side hardware. Accessories: Layered silver chain belt, dangling metallic charms, a small ivory handbag with cross decorations, a silver cross necklace, and delicate earrings. Hairstyle: Long, loose copper-red hair with soft waves and face-framing strands beneath the veil.",
+   "img": "images/i1791882508946.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1791882520938",
+   "cat": "c1791882466077",
+   "desc": "Main color: Black with silver accents. Dress: Fitted black ribbed dress with a high neckline, long sleeves, a close-fitting bodice, and a high thigh slit with decorative crisscross lacing along the exposed side. Silhouette: Hourglass shape with a defined waist and fitted hips. Length: Long, floor-length dress with a high side slit and a straight, narrow skirt. Sleeves: Long fitted sleeves extending to the wrists. Veil: Long black translucent veil draped over the head and down the back, decorated with silver cross motifs and ornamental edging. Footwear: Black pointed knee-high heeled boots with fitted shafts and metallic buckles. Accessories: Layered silver waist chains, a large hanging cross pendant, a silver cross necklace, dangling earrings, and a structured black handbag with metallic cross ornaments. Hairstyle: Long, loose copper-red hair with soft waves, parted near the center and partially covered by the veil.",
+   "img": "images/i1791882520938.jpg",
+   "fav": false
   }
  ]
 }
