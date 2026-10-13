@@ -19,12 +19,12 @@
  "cats": [
   {
    "id": "c1791273877107",
-   "name": "Соралисия",
+   "name": "vampire",
    "char": "ch1"
   },
   {
    "id": "c1791526987608",
-   "name": "Лилит",
+   "name": "dark princess",
    "char": "ch1791815644486"
   },
   {
@@ -51,6 +51,16 @@
    "id": "c1791882466077",
    "name": "so so casual",
    "char": "ch1791815482305"
+  },
+  {
+   "id": "c1791882891679",
+   "name": "asia suhi",
+   "char": "ch1"
+  },
+  {
+   "id": "c1791882924457",
+   "name": "bunny",
+   "char": "ch1791815644486"
   }
  ],
  "items": [
@@ -63,14 +73,14 @@
   },
   {
    "id": "i1791275249178",
-   "cat": "c1791526987608",
+   "cat": "c1791882924457",
    "desc": "The outfit consists of a dark chocolate-brown cropped lace-up blouse made from a lightweight semi-sheer fabric with a soft, slightly textured surface. The blouse has a deep V-neckline edged with black-brown floral lace, long voluminous sleeves, and a fitted waist that ends above the hips. The front is decorated with several narrow leather-look straps and metal eyelets, while the sleeves become gathered and slightly loose toward the wrists. Over the blouse, the character wears a pair of dark brown low-rise cargo trousers made from heavy cotton or cotton twill, with a relaxed, wide-leg silhouette extending to the ankles. The trousers feature multiple utility pockets, belt loops, a dark brown leather belt with a rectangular metal buckle, long hanging straps, and additional stitched panels around the thighs and knees. A pair of dark brown platform shoes or low boots completes the outfit, while the accessories include a small structured brown handbag with metal hardware and pale dusty-pink fluffy pom-poms attached",
    "img": "images/i1791275249178.jpg",
    "fav": false
   },
   {
    "id": "i1791275265913",
-   "cat": "c1791526987608",
+   "cat": "c1791882924457",
    "desc": "The outfit is centered around a fitted dark chocolate-brown satin corset with a structured boned construction, narrow shoulder straps, and a deep sweetheart neckline decorated with black-brown floral lace. The satin has a smooth, glossy surface that reflects light differently across the fitted bodice, while the corset extends to the natural waist with a slightly pointed lower edge. Over it, the character wears a long sheer brown lace or chiffon robe with wide sleeves, a loose open front, and ornate floral lace panels around the cuffs and edges. The robe reaches approximately to the ankles and has a long flowing hem that extends slightly behind the feet. The main skirt is a dark chocolate-brown satin maxi skirt with a fitted upper section and a high thigh slit on one side, extending from the hip almost to the floor. The footwear consists of delicate dark brown platform sandals with thin ankle straps and high heels, and the accessories include a small dark brown chain handbag, layered silver-toned necklaces",
    "img": "images/i1791275265913.jpg",
    "fav": false
@@ -105,7 +115,7 @@
   },
   {
    "id": "i1791527096183",
-   "cat": "c1791273877107",
+   "cat": "c1791882891679",
    "desc": "Main color: Hot pink / fuchsia with black accents. Dress: Fitted Chinese qipao-inspired dress with a high mandarin collar, short sleeves, a diagonal front closure, and black calligraphic patterns printed across the fabric. Silhouette: Close-fitting hourglass shape with a defined waist and fitted hips. Length: Floor-length dress with a high side slit extending to the upper thigh. Sleeves: Short, fitted cap sleeves. Footwear: Black open-toe high-heeled sandals with thin ankle straps. Accessories: Black lace fingerless gloves, a small structured black handbag with a chain handle, dangling earrings, and a decorative thigh chain with a sun-shaped ornament. Hairstyle: Long, loose copper-red hair with soft waves, curtain bangs, and face-framing strands.",
    "img": "images/i1791527096183.jpg",
    "fav": false
@@ -182,7 +192,7 @@
   },
   {
    "id": "i1791532335992",
-   "cat": "c1791273877107",
+   "cat": "c1791882891679",
    "desc": "Main color: Distressed ivory / black / faded beige.\nDress: Deconstructed gothic ensemble with a fitted ivory corset featuring antique newspaper-like printed patterns, visible boning, distressed fabric, decorative seams, and frayed lace edges. Black draped fabric forms a long asymmetrical skirt with gathered folds and a high slit. A structured black outer layer sits off the shoulders, with angular shoulder panels and long trailing fabric. Narrow distressed ivory strips hang from the corset and waist.\nSilhouette: Hourglass shape with a fitted corseted bodice, defined waist, narrow hips, and a long asymmetrical skirt.\nLength: Floor-length black skirt with an extended train and a high front slit.\nSleeves: Long black detached sleeves with oversized angular shoulders, loose layered fabric, and irregular edges.\nFootwear: Black pointed high heels with thin ankle straps, partially visible beneath the skirt.\nAccessories: Layered gothic necklaces, metallic cross pendant, decorative chains, multiple rings, distressed fabric charms, and a long dangling silver cross accessory.\nHairstyle: Long ginger-red hair styled in a loose, slightly messy updo with a high bun, wispy bangs, and loose strands framing the face.",
    "img": "images/i1791532335992.jpg",
    "fav": false
