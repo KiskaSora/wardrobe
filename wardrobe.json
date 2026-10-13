@@ -36,6 +36,16 @@
    "id": "c1791880510438",
    "name": "vostok",
    "char": "ch1791815482305"
+  },
+  {
+   "id": "c1791881889850",
+   "name": "witch",
+   "char": "ch1791815482305"
+  },
+  {
+   "id": "c1791881922706",
+   "name": "winter",
+   "char": "ch1791815482305"
   }
  ],
  "items": [
@@ -111,7 +121,7 @@
   },
   {
    "id": "i1791530912188",
-   "cat": "c1791815508301",
+   "cat": "c1791881889850",
    "desc": "Main color: Dark olive green / black.  \nDress: Dramatic witch gown with a deep plunging neckline, fitted wrap-style bodice, cinched waist, and layered asymmetrical skirt. Black fabric forms a long trailing underskirt, while dark olive-green panels overlap at the front and sides, revealing the legs through a high slit. Decorative belts, buckles, and gold chains wrap around the waist and hips.  \nSilhouette: Hourglass shape with a fitted bodice, defined waist, voluminous sleeves, and flowing layered skirt.  \nLength: Floor-length gown with a long black train and an asymmetrical front opening.  \nSleeves: Oversized gathered bishop sleeves in dark olive-green fabric, with voluminous shoulders and fitted black cuffs.  \nFootwear: Black pointed high heels with delicate gold ankle chains.  \nAccessories: Wide-brimmed pointed black witch hat decorated with feathers, dried botanical ornaments, and antique metallic details; black gloves, layered gold necklaces, a decorative waist belt, dangling earrings, and delicate gold chains.  \nHairstyle: Very long, thick ginger-red hair with abundant loose waves flowing over the shoulders and down the back.",
    "img": "images/i1791530912188.jpg",
    "fav": false
@@ -146,7 +156,7 @@
   },
   {
    "id": "i1791531827238",
-   "cat": "c1791815508301",
+   "cat": "c1791881922706",
    "desc": "Main color: Black / dark burgundy / red tartan.\nDress: Gothic-inspired fitted black corset with a plunging neckline, structured boning, decorative metallic clasps, and a narrow waist belt. The corset is paired with a short red-and-black tartan skirt featuring layered asymmetrical panels, gathered fabric, and a high front opening. A dramatic oversized fur coat frames the entire outfit.\nSilhouette: Hourglass shape with a fitted corset, defined waist, short layered skirt, and oversized outerwear.\nLength: Short tartan skirt ending at the upper thighs; oversized fur coat reaching nearly to the ankles.\nSleeves: Extremely voluminous long fur sleeves with thick black and dark burgundy fur, extending to the hands.\nFootwear: Black lace-up platform combat boots with thick soles, multiple metallic buckles, and tall shafts reaching below the knees.\nAccessories: Black decorative choker, layered chains, metallic corset clasps, waist chains, gothic rings, and a small black hair bow.\nHairstyle: Long, voluminous ginger-red hair styled in loose waves with soft curls framing the face and a small black ribbon attached near the side.",
    "img": "images/i1791531827238.jpg",
    "fav": false
