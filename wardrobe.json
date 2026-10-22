@@ -61,6 +61,11 @@
    "id": "c1791882924457",
    "name": "bunny",
    "char": "ch1791815644486"
+  },
+  {
+   "id": "c1792672179244",
+   "name": "casual",
+   "char": "ch1"
   }
  ],
  "items": [
@@ -391,6 +396,48 @@
    "cat": "c1791882466077",
    "desc": "Main color: Black, charcoal gray, and antique silver. Dress: A black satin corset gown with a sweetheart neckline, sheer mesh panels, intricate boning, decorative silver chains, dangling heart charms, and voluminous layered black chiffon ruffles, with a high front slit and translucent trailing overskirt. Silhouette: Dramatic hourglass shape with a tightly fitted corset, defined waist, voluminous ruffled hips, and flowing sheer layers. Length: High-thigh front slit with asymmetrical layered panels and a floor-length translucent train. Sleeves: Detached sheer black puff sleeves with gathered ruffles, paired with long black lace gloves. Footwear: Black open-toe platform heels with ankle straps and delicate silver embellishments. Accessories: A black lace choker, layered silver necklaces, dangling earrings, decorative waist chains, heart-shaped pendants, silver garter chains, and a black floral hair ornament. Hairstyle: Extremely long, voluminous auburn hair with loose cascading curls, styled in a high half-up ponytail with a black floral accessory and delicate face-framing strands.",
    "img": "images/i1792671566105.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1792672076365",
+   "cat": "c1791882466077",
+   "desc": "Main color: Ivory, champagne and dusty mauve. Dress: Ivory satin off-the-shoulder corset bodice with structured cups, delicate lacing and sheer ruffled sleeves, paired with a dusty mauve layered skirt decorated with floral appliqués, draped fabric and cascading pearl chains. Silhouette: Feminine hourglass shape with a fitted corset, defined waist and voluminous asymmetrical draping around the hips. Length: Floor-length skirt with a high slit, sheer trailing panels and an uneven hem. Sleeves: Detached ivory sheer sleeves with oversized ruffled bows around the upper arms. Footwear: Delicate ivory strappy high-heeled sandals with thin ribbons wrapping around the calves. Accessories: Layered pearl and gold necklaces, delicate bracelets, floral hair ornaments, dangling earrings and a small ivory handbag with a gold chain strap. Hairstyle: Very long voluminous copper-red hair styled in loose cascading waves, with small sections pinned back and delicate floral ornaments.",
+   "img": "images/i1792672076365.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1792672089269",
+   "cat": "c1791882466077",
+   "desc": "Main color: Black and charcoal. Outfit: Glossy black leather corset bustier with structured cups, paired with a cropped black leather jacket featuring sharp wide lapels and silver stitching, and an asymmetrical black draped skirt with gathered fabric and sheer layered panels. Silhouette: Dramatic hourglass shape with a tightly fitted corset, defined waist, fitted hips and a high slit revealing one leg. Length: Short cropped jacket ending at the waist, with a floor-length asymmetrical skirt and translucent trailing panels. Sleeves: Long fitted black leather sleeves with structured shoulders and subtle silver detailing. Footwear: Pointed black high-heeled pumps with delicate ankle straps, paired with sheer black thigh-high stockings and lace garter details. Accessories: Black choker, layered silver necklaces, thin chain belt, black leather gloves, silver rings and a small glossy black handbag with dangling chain details. Hairstyle: Very long voluminous copper-red hair in loose, tousled waves, with the front sections pinned back using small dark hair clips.",
+   "img": "images/i1792672089269.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1792672103708",
+   "cat": "c1791882466077",
+   "desc": "Main color: Taupe, warm brown, dark chocolate and charcoal. Outfit: Oversized taupe-brown double-breasted long coat with broad lapels and large dark buttons, worn over a dark chocolate ribbed turtleneck sweater and a brown plaid pleated miniskirt. Silhouette: Relaxed oversized outerwear contrasted with a fitted high-neck sweater, a short structured skirt and long fitted socks. Length: Long coat extending to the ankles, miniskirt ending at the upper thighs, and thigh-high socks reaching above the knees. Sleeves: Long, oversized coat sleeves with gathered cuffs and voluminous fabric. Footwear: Black chunky platform loafers with glossy leather finish, double straps and block heels. Accessories: Black leather belt with a silver buckle, small black shoulder bag with metal hardware, takeaway coffee cup, dark hair clip and subtle earrings. Hairstyle: Very long copper-red hair styled in loose natural waves, with soft face-framing strands and a small black hair clip on one side.",
+   "img": "images/i1792672103708.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1792672194484",
+   "cat": "c1792672179244",
+   "desc": "Main color: Black and sheer charcoal. Outfit: Fitted black leather corset with structured cups and intricate boning, paired with glossy black fitted trousers and a long sheer black lace overdress featuring floral embroidery, a high neckline and a dramatic trailing hem. Silhouette: Sleek hourglass shape with a tightly fitted corset, narrow waist, fitted hips and elongated legs. Length: Full-length trousers and a floor-length transparent lace train extending behind the figure. Sleeves: Long fitted sheer black lace sleeves with delicate floral patterns and narrow lace cuffs. Footwear: Pointed black leather ankle boots with slim high heels. Accessories: Black choker, layered silver necklaces, small earrings and understated rings. Hairstyle: Very long straight copper-red hair with full soft bangs, smooth lengths falling past the waist and a slightly tousled texture at the ends.",
+   "img": "images/i1792672194484.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1792672207058",
+   "cat": "c1792672179244",
+   "desc": "Main color: Pale sage green, ivory and champagne. Dress: Strapless pale sage-green satin corset gown with a sweetheart neckline, structured boning, ruched fabric and a fitted skirt that opens into a high slit. Silhouette: Elegant hourglass shape with a sculpted bodice, defined waist and a narrow fitted skirt flowing into a soft train. Length: Floor-length gown with a long trailing hem and a high slit revealing one leg. Sleeves: Sleeveless strapless design, complemented by a voluminous ivory feather stole draped around both arms. Footwear: Pointed pale champagne high heels with a delicate finish. Accessories: Layered fine silver necklaces, a small pendant, delicate earrings, subtle bracelets and sheer sparkling stockings. Hairstyle: Long straight copper-red hair with full soft bangs, falling over the shoulders and down the back, with smooth glossy strands.",
+   "img": "images/i1792672207058.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1792672217745",
+   "cat": "c1792672179244",
+   "desc": "Main color: Dusty lavender, mauve and antique gold. Dress: Sheer dusty-lavender chiffon gown with a deep V-neckline, a gathered bodice, delicate lace edging and a flowing layered skirt with cascading ruffles. Silhouette: Soft hourglass shape with a gathered waist, a draped bodice and airy fabric that follows the hips before flowing outward. Length: Floor-length gown with a high slit, an asymmetrical ruffled hem and a long translucent train. Sleeves: Long sheer bell sleeves with loose flowing fabric and lace-trimmed cuffs. Footwear: Delicate gold strappy high-heeled sandals with thin ankle straps. Accessories: Fine gold waist chain draped around the hips, delicate necklaces, small earrings and subtle gold embellishments along the waist and skirt. Hairstyle: Long straight copper-red hair with full soft bangs, glossy lengths falling over the shoulders and down the back.",
+   "img": "images/i1792672217745.jpg",
    "fav": false
   }
  ]
