@@ -56,6 +56,7 @@ nav button.on{color:var(--ac)}nav .i{width:24px;height:24px}
 .db{max-width:560px;margin:0 auto;padding:16px 16px calc(28px + env(safe-area-inset-bottom,0px))}
 .chip{display:inline-block;border-radius:20px;padding:7px 14px;background:var(--card);border:1px solid var(--bd);font-size:14px}
 textarea,input{width:100%;font:inherit;font-size:16px;padding:12px;border-radius:12px;border:1px solid var(--bd);background:var(--card);color:var(--tx);margin:10px 0}
+#eDesc{overflow-y:auto;max-height:45vh;-webkit-overflow-scrolling:touch}
 select{width:100%;font:inherit;font-size:16px;padding:12px;border-radius:12px;border:1px solid var(--bd);background:var(--card);color:var(--tx);margin:10px 0}
 textarea{resize:none;overflow:hidden;line-height:1.45;min-height:90px}
 .row{display:flex;gap:10px;margin-top:10px}.row button{flex:1}
@@ -507,8 +508,10 @@ function openEd(){
   const i=item();if(!i||!can())return;flush();
   ePend=null;$('eFile').value='';$('eImg').src=i.img;$('eDesc').value=i.desc||'';
   $('eCat').innerHTML=S.chars.filter(ch=>catsOf(ch.id).length).map(ch=>`<optgroup label="${esc(ch.name)}">`+catsOf(ch.id).map(c=>`<option value="${c.id}"${c.id===i.cat?' selected':''}>${esc(c.name)}</option>`).join('')+'</optgroup>').join('');
-  dEd.showModal();
+  dEd.showModal();fitE();
 }
+function fitE(){const t=$('eDesc');t.style.height='auto';t.style.height=Math.min(Math.max(120,t.scrollHeight),innerHeight*.45)+'px'}
+$('eDesc').addEventListener('input',fitE);
 function ePick(inp){const f=inp.files[0],i=item();ePend=null;if(!f){if(i)$('eImg').src=i.img;return}shrink(f,900,u=>{ePend=u;$('eImg').src=u})}
 function saveEd(){
   const i=item();if(!i)return;
