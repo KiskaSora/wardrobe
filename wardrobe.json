@@ -3,16 +3,19 @@
   {
    "id": "ch1",
    "name": "Соралисия",
+   "desc": "Soralysia, adult woman, 34-year-old woman, mature woman, unmistakably adult, sexy mommy, mature feminine beauty, sophisticated sensual woman, statuesque elegant beauty, sharp alluring facial features, elongated oval face, slim face, defined cheekbones, high cheekbones, defined jawline, tapered chin, sculpted facial contours, mature facial structure, sharp almond-shaped eyes, slightly upturned outer eye corners, narrow half-lidded eyes, heavy upper eyelids, sly seductive gaze, cunning expression, confident smirk, icy light-blue irises, black eyeliner, sharp elongated black winged eyeliner, long thick copper-orange eyelashes, copper-red eyebrows, 2.0::long  eyelashes::, Thick, fluffy copper orange eyelashes,very long eyelashes, thick eyelashes, sharp black winged eyeliner, long cat-eye eyeliner, fair porcelain skin, full plump lips, voluptuous lips, full lower lip, defined cupid's bow, glossy lips, sultry beauty, gorgeous mature woman, seductive feminine beauty, flawless youthful skin, smooth skin, alluring half-lidded eyes, glamorous makeup, warm peach undertone, natural freckles across nose and upper cheeks, full plump lips, defined cupid's bow, muted rosy-red lips, long straight copper-orange hair, completely straight hair, sleek straight hair, silky smooth hair, pin-straight lengths, waist-length hair, thick luxurious hair, straight blunt bangs, full straight fringe across forehead, perfectly straight fringe, hair framing elongated face, elegant hairline, long graceful neck, black choker-like neck tattoo, continuous circular band of black Japanese characters around neck, intricate black calligraphy tattoo encircling neck, elegant slender shoulders, defined collarbones, voluptuous mature hourglass figure, very large full breasts, narrow defined waist, soft lower belly, slight natural belly softness, wide hips, very large round full buttocks, thick shapely thighs, sensual feminine curves, mature adult proportions, long legs, elegant posture, commanding presence, sophisticated mature femininity, magnetic sensuality, self-assured woman, alluring grown woman, elegant dangerous beauty",
    "img": "images/ch1.jpg"
   },
   {
    "id": "ch1791815482305",
    "name": "Сорабелла",
+   "desc": "",
    "img": "images/ch1791815482305.jpg"
   },
   {
    "id": "ch1791815644486",
    "name": "Лилит",
+   "desc": "",
    "img": "images/ch1791815644486.jpg"
   }
  ],
@@ -817,6 +820,18 @@
    "desc": "Main color: Ivory and white with gold. Dress: Off-the-shoulder ivory satin gown with a low open back, heavy draped and gathered skirt with gold chains and tassels, a high slit and a small train. Silhouette: Hourglass shape with a fitted bodice and a voluminous draped skirt. Length: Floor-length gown with a trailing hem. Sleeves: Detached ivory puffed sleeves with gold chain details, worn off the shoulders. Footwear: Gold strappy transparent platform heels with chain ankle details. Accessories: Gold chains and tassels, pearl hair chain and jeweled headpiece, drop earrings, choker. Hairstyle: Long loose voluminous curly hair with soft texture and a pearl hair chain.",
    "img": "images/i1792736824594.jpg",
    "fav": false
+  }
+ ],
+ "looks": [
+  {
+   "id": "l1793083339568",
+   "name": "Соралисия",
+   "desc": "Soralysia, adult woman, 34-year-old woman, mature woman, unmistakably adult, sexy mommy, mature feminine beauty, sophisticated sensual woman, statuesque elegant beauty, sharp alluring facial features, elongated oval face, slim face, defined cheekbones, high cheekbones, defined jawline, tapered chin, sculpted facial contours, mature facial structure, sharp almond-shaped eyes, slightly upturned outer eye corners, narrow half-lidded eyes, heavy upper eyelids, sly seductive gaze, cunning expression, confident smirk, icy light-blue irises, black eyeliner, sharp elongated black winged eyeliner, long thick copper-orange eyelashes, copper-red eyebrows, 2.0::long  eyelashes::, Thick, fluffy copper orange eyelashes,very long eyelashes, thick eyelashes, sharp black winged eyeliner, long cat-eye eyeliner, fair porcelain skin, full plump lips, voluptuous lips, full lower lip, defined cupid's bow, glossy lips, sultry beauty, gorgeous mature woman, seductive feminine beauty, flawless youthful skin, smooth skin, alluring half-lidded eyes, glamorous makeup, warm peach undertone, natural freckles across nose and upper cheeks, full plump lips, defined cupid's bow, muted rosy-red lips, long straight copper-orange hair, completely straight hair, sleek straight hair, silky smooth hair, pin-straight lengths, waist-length hair, thick luxurious hair, straight blunt bangs, full straight fringe across forehead, perfectly straight fringe, hair framing elongated face, elegant hairline, long graceful neck, black choker-like neck tattoo, continuous circular band of black Japanese characters around neck, intricate black calligraphy tattoo encircling neck, elegant slender shoulders, defined collarbones, voluptuous mature hourglass figure, very large full breasts, narrow defined waist, soft lower belly, slight natural belly softness, wide hips, very large round full buttocks, thick shapely thighs, sensual feminine curves, mature adult proportions, long legs, elegant posture, commanding presence, sophisticated mature femininity, magnetic sensuality, self-assured woman, alluring grown woman, elegant dangerous beauty"
+  },
+  {
+   "id": "l1793083305033",
+   "name": "Сора",
+   "desc": "Sorabella, adult woman ,gorgeous face, facial symmetry, delicate facial features, soft feminine features, refined elegant features,\noval face, soft jawline, adult face, high cheekbones, large light blue doe eyes, almond-shaped eyes, bright blue irises, glossy eyes, orange eyelashes, orange eyebrows, long thick eyelashes, soft arched eyebrows, small delicate nose, full plump lips, rosy cheeks, flawless fair skin, freckles, gentle expression, soft gaze, long face, long thick copper-orange eyelashes, copper-red eyebrows, 2.0::long  eyelashes::, Thick, fluffy copper orange eyelashes,very long eyelashes, thick eyelashes, sharp black winged eyeliner, extra detailed,\nvery long knee-length hair, thick voluminous copper-orange wavy hair, large soft waves, loose flowing waves,parted bangs, fluffy voluminous locks, long flowing strands, shiny glossy hair, natural hair highlights, long ginger wavy hair, thick lips, thick eyelashes, pale skin,  freckled fair skin, mature feminine body, adult female proportions, hourglass figure, slim waist, full hips, plump thighs, small soft belly, round butt, plump lips, huge 6-size chest, big breasts,Rapunzel hair leght, beautiful woman, ethereal aesthetic body, beautiful body, 168cm, tall woman, light pink_nails"
   }
  ]
 }
