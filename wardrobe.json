@@ -90,6 +90,11 @@
    "id": "c1794120860812",
    "name": "casual girl",
    "char": "ch1794120817859"
+  },
+  {
+   "id": "c1794122586840",
+   "name": "madonna",
+   "char": "ch1"
   }
  ],
  "items": [
@@ -980,6 +985,55 @@
    "cat": "c1791881889850",
    "desc": "black and antique ivory witch gown, gothic cathedral-inspired dress, structured corset bodice, pointed basque waist, dramatic sculpted hips, high collar, long fitted sleeves, flared lace cuffs, asymmetric cathedral-length train, layered black organza, stained glass embroidery, silver gothic filigree, dangling cross-shaped crystal ornaments, ornate silver waist chains, embroidered thigh-high stockings, pointed platform ankle boots, elaborate spiked halo headpiece, black lace veil, crystal chandelier earrings, multiple silver rings, intricate gothic choker, elegant braided updo, loose face-framing strands",
    "img": "images/i1794121971957_1794122125564.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1794122605626",
+   "cat": "c1794122586840",
+   "desc": "burgundy medieval-inspired gown, deep wine red hooded cloak, oversized pointed draped hood, long flowing hooded mantle, wide bell sleeves, layered ruffled cuffs, low square neckline, strapless fitted corset bodice, ivory central corset panel, vertical gold embroidered seams, structured waist, fitted burgundy dress, long flowing skirt, two large spherical gold filigree pendants hanging from the waist, ornate gold waist chains, elaborate dangling gold gemstone earrings, antique gold jewelry, luxurious heavy fabric, elegant gothic aristocratic fashion",
+   "img": "images/i1794122605626.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1794122702766",
+   "cat": "c1794122586840",
+   "desc": "ash grey hooded cloak, oversized soft grey hood, long draped mantle, loose flowing grey sleeves, wide open front, strapless silver metal ring corset, interlocking silver circular rings, linked metal hoop bodice, metallic openwork bustier, fitted silver corset, long grey draped skirt, layered grey fabric, antique silver jewelry, large silver rings, delicate silver accessories, intricate grey lace parasol, ornate floral lace umbrella, scalloped lace edges, vintage gothic parasol, muted monochromatic palette, elegant avant-garde gothic fashion, grey top",
+   "img": "images/i1794122702766.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1794122740851",
+   "cat": "c1794122586840",
+   "desc": "elegant black satin evening gown, fitted black dress, low square neckline, sculpted fitted bodice, tightly defined waist, fitted hips, long floor-length skirt, flowing satin train, extravagant oversized black ruffled shoulder pieces, enormous layered black fabric rosettes, sculptural puff shoulders, dramatic cascading shoulder ruffles, long fitted black opera gloves, ruched glove detailing, black ribbon streamers hanging from sleeves, subtle black lace trim, small pearl hair ornaments, luxurious gothic haute couture, dramatic feminine silhouette",
+   "img": "images/i1794122740851.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1794122812550",
+   "cat": "c1794122586840",
+   "desc": "black bodycon maxi dress, smooth charcoal black satin, deep square neckline, low-cut fitted bodice, narrow fitted waist, tightly fitted long skirt, gigantic black fabric rose shoulder ornaments, oversized densely gathered ruffles, asymmetrical layered shoulder frills, black rosette sleeves, long thin black ribbons hanging from shoulder decorations, fitted black satin opera gloves, pointed glove fingers, dramatic sculptural shoulders, small white pearl hair clips, elegant gothic eveningwear, dark romantic couture, sophisticated black monochrome outfit",
+   "img": "images/i1794122812550.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1794122869157",
+   "cat": "c1794122586840",
+   "desc": "deep burgundy velvet gown, black structured underbust corset, plunging sweetheart neckline, sculpted basque waist, long fitted skirt, asymmetric draped overskirt, gathered crimson fabric at hips, oversized detachable black bell sleeves, burgundy lace lining, long trailing velvet ribbons, heavy antique gold waist chains, large oval ruby pendant, ornate gold brooches, long pointed black gloves, black platform heeled boots, burgundy lace hood, elaborate gold hair ornaments, dark aristocratic witch fashion",
+   "img": "images/i1794122869157.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1794122907834",
+   "cat": "c1794122586840",
+   "desc": "smoky grey silk gown, fitted silver chainmail corset, intricate interlocking metal rings, metallic sculpted bustier, asymmetric neckline, sharply defined waist, draped ankle-length silk skirt, high side slit, oversized grey hooded capelet, long detached sheer sleeves, flowing translucent fabric panels, silver waist chains, irregular pearl necklaces, dangling antique keys, moonstone pendants, silver finger armor, pearl-embellished grey tabi boots, elaborate silver ear cuffs, sculptural gothic avant-garde fashion",
+   "img": "images/i1794122907834.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1794122947719",
+   "cat": "c1794122586840",
+   "desc": "black silk mermaid gown, corseted sweetheart bodice, sculpted hourglass silhouette, fitted waist, flared floor-length skirt, enormous black rose-shaped shoulder decorations, layered sculptural fabric petals, asymmetrical shoulder cape, long flowing black ribbons, sheer black lace panels, black floral embroidery, fitted elbow-length gloves, antique garnet jewelry, delicate ruby waist chain, black rose choker, oversized asymmetrical lace veil, ornate black hair comb, black pointed high heels, dramatic gothic floral couture",
+   "img": "images/i1794122947719.jpg",
    "fav": false
   }
  ],
