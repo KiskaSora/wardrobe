@@ -17,6 +17,12 @@
    "name": "Лилит",
    "desc": "",
    "img": "images/ch1791815644486.jpg"
+  },
+  {
+   "id": "ch1794120817859",
+   "name": "Аста",
+   "desc": "",
+   "img": "images/ch1794120817859.jpg"
   }
  ],
  "cats": [
@@ -74,6 +80,16 @@
    "id": "c1794111487497",
    "name": "temachik",
    "char": "ch1791815482305"
+  },
+  {
+   "id": "c1794120825295",
+   "name": "mermaid",
+   "char": "ch1794120817859"
+  },
+  {
+   "id": "c1794120860812",
+   "name": "casual girl",
+   "char": "ch1794120817859"
   }
  ],
  "items": [
@@ -880,6 +896,34 @@
    "cat": "c1794111487497",
    "desc": "Main color: Charcoal brown / smoky gray / muted ivory / antique gold.\nDress: Dark Air Nomad-inspired gown with a fitted cross-wrapped bodice, lace-up corseted waist, golden cloud embroidery, and layered flowing sashes. The skirt features translucent smoky fabric, asymmetrical draping, decorative beads, and a thigh-high slit.\nSilhouette: Soft hourglass shape with a fitted bust, narrow corseted waist, oversized flowing sleeves, and airy layered skirt.\nLength: Floor-length with a high front opening and long translucent panels.\nSleeves: Oversized sheer gray bell sleeves with golden cloud embroidery and wide decorative cuffs.\nFootwear: Dark brown knee-high heeled boots with gold cloud patterns, saffron ribbon lacing, and hanging tassels.\nAccessories: Golden forehead ornament, layered bead necklaces, cloud medallion, waist chains, decorative thigh jewelry, white lilies, and dangling tassels.\nHairstyle: Extremely long flowing curls, partially pinned back with loose braided sections, white flowers, golden chains, and delicate hanging ornaments.",
    "img": "images/i1794112117336.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1794120893242",
+   "cat": "c1794120860812",
+   "desc": "Main color: Pearlescent ivory / blush coral / pale aqua / gold.\nDress: Short seashell corset dress with sculpted coral-pink shell cups, pearl embroidery, and layered iridescent organza ruffles.\nSilhouette: Fitted hourglass corset with an asymmetrical voluminous skirt and flowing translucent drapes.\nLength: Mini-length front with long cascading side panels.\nSleeves: One oversized sheer ruffled sleeve, opposite arm decorated with golden chains.\nFootwear: Gold stiletto sandals with sculpted fins, seashells, pearls, and ankle chains.\nAccessories: Coral-and-shell hair crown, pearl choker, layered necklaces, dangling gemstone earrings, jeweled thigh chains, and golden armlets.\nHairstyle: Extremely long, voluminous flowing waves with pearl strands.",
+   "img": "images/i1794120893242.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1794120914937",
+   "cat": "c1794120825295",
+   "desc": "Main color: Pearl white / opalescent silver / seafoam / champagne gold.\nTop: Sculpted ivory seashell bra decorated with gold filigree, opal gemstones, and cascading pearl chains.\nSilhouette: Feminine hourglass upper body transitioning into a long, elegantly tapered mermaid tail.\nTail: Shimmering pearlescent scales with layered translucent side fins and an enormous iridescent, multi-lobed tail fin.\nSleeves: Detached sheer fin-like ruffled sleeves with ornate jeweled cuffs.\nFootwear: None, mermaid tail.\nAccessories: Elaborate golden coral crown, shell ornaments, pearl hair chains, jeweled collar, layered body chains, starfish decorations, and dangling opal pendants.\nHairstyle: Extremely long, voluminous waves decorated with pearls and seashells.",
+   "img": "images/i1794120914937.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1794120936041",
+   "cat": "c1794120860812",
+   "desc": "Main color: Deep teal / charcoal black / smoky silver / pale aqua.\nDress: Dark embroidered corset gown with sculpted pearl-shell cups, ornate metallic detailing, and layered translucent organza.\nSilhouette: Dramatic hourglass shape with a tightly fitted waist, exaggerated hips, and a voluminous asymmetrical skirt.\nLength: Short high-slit front revealing the legs, with a sweeping floor-length train.\nSleeves: Oversized sheer smoky-gray ruffled sleeves with jeweled cuffs.\nFootwear: Ornate gold platform stilettos with pearl ankle chains and sculpted shell accents.\nAccessories: Coral-and-shell crown with a smoky veil, opal necklaces, pearl thigh chains, jeweled garters, and an elaborate hanging pearl lantern.\nHairstyle: Extremely long, voluminous waves with pearl chains and decorative seashells.",
+   "img": "images/i1794120936041.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1794120952701",
+   "cat": "c1794120825295",
+   "desc": "Main color: Midnight blue / black pearl / silver / iridescent teal.\nTop: Dark metallic seashell bra with silver filigree, black pearls, opalescent gemstones, and layered jewelry chains.\nSilhouette: Defined hourglass upper body flowing into a long, slender, dark-scaled mermaid tail.\nTail: Iridescent midnight-blue scales transitioning into enormous layered translucent fins with silver embroidery, crescent-moon ornaments, and jeweled droplets.\nSleeves: Detached flowing sheer fin sleeves with silver coral cuffs and pearl chains.\nFootwear: None, mermaid tail.\nAccessories: Silver crescent-moon crown with coral branches, black pearls, moonstone choker, layered body chains, dangling crystal earrings, and celestial tail jewelry.\nHairstyle: Extremely long, voluminous waves adorned with black pearls, silver chains, and moonstone ornaments.",
+   "img": "images/i1794120952701.jpg",
    "fav": false
   }
  ],
