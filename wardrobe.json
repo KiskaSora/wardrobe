@@ -23,6 +23,12 @@
    "name": "Аста",
    "desc": "",
    "img": "images/ch1794120817859.jpg"
+  },
+  {
+   "id": "ch1795349119245",
+   "name": "Соравьенна",
+   "desc": "",
+   "img": "images/ch1795349119245.jpg"
   }
  ],
  "cats": [
@@ -95,6 +101,16 @@
    "id": "c1794122586840",
    "name": "madonna",
    "char": "ch1"
+  },
+  {
+   "id": "c1795349182463",
+   "name": "casual",
+   "char": "ch1795349119245"
+  },
+  {
+   "id": "c1795349204363",
+   "name": "nigthmare",
+   "char": "ch1795349119245"
   }
  ],
  "items": [
@@ -1069,6 +1085,13 @@
    "cat": "c1791881922706",
    "desc": "Main color: Black, dark cherry red, chocolate brown, warm cream.\n\nDress: Fitted black sweetheart-neckline top with delicate black lace edging, dark cherry-red and black tartan pleated mini skirt with asymmetrical ruffled layers, oversized chocolate-brown shearling jacket with thick cream faux-fur lining draped around the shoulders.\n\nSilhouette: Dramatic hourglass silhouette, cinched waist, fitted bust, short flared skirt, oversized shearling outerwear.\n\nLength: Upper-thigh layered mini skirt, hip-length jacket.\n\nSleeves: Sleeveless fitted black top underneath oversized jacket sleeves with wide fluffy cuffs.\n\nLegwear: Opaque dark chocolate-brown tights.\n\nFootwear: Dark brown leather knee-high platform boots with chunky high heels, multiple buckle straps, and antique brass hardware.\n\nAccessories: Black lace choker with burgundy satin ribbon, layered antique-silver necklaces, multiple dark leather belts, burgundy leather shoulder bag with dangling ribbons, large dark wine-red lily hair accessory.\n\nHairstyle: loose romantic curls, slightly tousled side part, burgundy lily tucked into the hair.",
    "img": "images/i1795077731678.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1795349220435",
+   "cat": "c1795349204363",
+   "desc": "extravagant pastel pink rococo couture, luxurious blush pink satin mini dress, extremely structured corset bodice, dramatic tiny pannier skirt, exaggerated sculpted hips, narrow corseted waist, intricate champagne gold embroidery, ornate pearl decorations, sweetheart neckline, elaborate lace ruffles, off-shoulder puffed sleeves, delicate ribbon bows, layered pink silk draperies, pearl chains hanging from skirt, pink satin stockings, champagne gold rococo heels, antique pearl choker, pink cameo brooch, romantic aristocratic fashion",
+   "img": "images/i1795349220435.jpg",
    "fav": false
   }
  ],
