@@ -136,6 +136,11 @@
    "id": "c1795519025570",
    "name": "BITE",
    "char": "ch1795349119245"
+  },
+  {
+   "id": "c1795520745077",
+   "name": "ALT!",
+   "char": "ch1795349119245"
   }
  ],
  "items": [
@@ -1572,6 +1577,13 @@
    "cat": "c1795519025570",
    "desc": "Main color: Raspberry pink / plum purple / lilac / fuchsia.\n\nDress: Strapless pink and purple plaid corset with a sweetheart neckline, decorative front lacing, and delicate cream lace trimming. Dark plum satin micro skirt with voluminous gathered fabric, sculptural ruffles, and a bubble-shaped hem. Pink and purple argyle-patterned tights.\n\nSilhouette: Fitted hourglass corset, exposed midriff, exaggerated rounded skirt, and fitted legs.\n\nLength: Ultra-short micro skirt.\n\nSleeves: Sleeveless, bare shoulders.\n\nFootwear: Glossy metallic purple pointed-toe pumps.\n\nAccessories: Oversized geometric fuchsia sunglasses with tinted lenses, large openwork pink butterfly-wing hair ornaments, raspberry-shaped earrings, and a pink macaron-shaped handbag with a golden shoulder chain.\n\nHairstyle: Loose straight hair with a center part.",
    "img": "images/i1795519559961.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1795520779852",
+   "cat": "c1795520745077",
+   "desc": "",
+   "img": "images/i1795520779852.jpg",
    "fav": false
   }
  ],
