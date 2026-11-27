@@ -2099,7 +2099,7 @@
   {
    "id": "i1795783454531",
    "cat": "c1795782661018",
-   "desc": "",
+   "desc": "Main color: Antique ivory / champagne beige / pearl white / aged silver.\n\nDress: Elaborate Victorian-inspired bridal gown with a fully covered high neckline and a structured corseted bodice decorated with intricate floral lace and ornamental embroidery. The elongated pointed basque waist transitions into a voluminous champagne satin skirt with deep gathered folds and luxurious flowing fabric. The entire lower hem is decorated with a wide, intricately embroidered floral lace border.\n\nSilhouette: Sculptural hourglass shape with a tightly defined corseted waist, elongated pointed bodice, and voluminous A-line skirt.\n\nLength: Floor-length bridal gown with a wide sweeping train and scalloped lace hem.\n\nSleeves: Long fitted floral lace sleeves extending to the wrists, finished with delicate scalloped lace cuffs.\n\nFootwear: Ivory satin pointed-toe bridal pumps.\n\nAccessories: Oversized halo-shaped bridal headdress made from intricately patterned ivory lace, framed with sculptural white roses and delicate pearl embellishments. Long cathedral-length floral lace veil cascading behind the body and spreading across the floor. Layered antique silver necklaces with ornate cross pendants, and an exceptionally long pearl rosary with silver religious ornaments.\n\nHairstyle: Loose voluminous hair styled in cascading romantic curls, with a center part and softly curled face-framing strands, framed by an elaborate lace bridal halo.\n\nMakeup: Soft pearlescent eyeshadow, delicate peach-pink blush, subtle luminous highlights, and muted rose-red lips.",
    "img": "images/i1795783454531.jpg",
    "fav": false
   },
@@ -2225,8 +2225,22 @@
   {
    "id": "i1795787866051",
    "cat": "c1795782661018",
-   "desc": "",
+   "desc": "Main color: Warm ivory / champagne beige / pearl silver / antique gold.\n\nDress: Elegant ivory satin ceremonial gown with a high wrapped neckline, intricate asymmetrical draping across the bodice, and a wide gathered fabric sash defining the waist. The fitted skirt features overlapping diagonal folds and a narrow front opening. Long cascading satin panels extend from the sleeves and spread across the floor, creating a dramatic royal train.\n\nSilhouette: Sculptural hourglass shape with a softly draped bodice, tightly defined waist, fitted hips, and elongated flowing fabric panels.\n\nLength: Floor-length gown with an extensive sweeping train.\n\nSleeves: Long voluminous bishop sleeves with gathered fabric, fitted wrapped cuffs, and dramatic floor-length trailing satin panels.\n\nFootwear: Champagne-gold open-toe high-heeled sandals with delicate ankle straps and jeweled embellishments.\n\nAccessories: Elaborate silver embroidered lace veil covering the crown and framing the face, intricate silver forehead jewelry with dangling gemstones, delicate pearl embellishments, and ornate metallic filigree details.\n\nHairstyle: Loose voluminous hair styled in cascading defined curls with a center part, partially covered by an ornate lace veil.",
    "img": "images/i1795787866051.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1795787939666",
+   "cat": "c1795782661018",
+   "desc": "",
+   "img": "images/i1795787939666.jpg",
+   "fav": false
+  },
+  {
+   "id": "i1795787945844",
+   "cat": "c1795782661018",
+   "desc": "",
+   "img": "images/i1795787945844.jpg",
    "fav": false
   }
  ],
